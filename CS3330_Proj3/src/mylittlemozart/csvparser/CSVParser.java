@@ -29,11 +29,11 @@ public class CSVParser {
                     int startEndTick = Integer.parseInt(data[0]);
                     int noteOnOff = 0;
                     // if the string is "Note_off_c" sets a 0, if the note is on, sets a 1
-//                    System.out.println(data[1]);
-                    if (data[1] == " Note_off_c") {
+//                    System.out.println("||" + data[1] + "||");
+                    if (data[1].equals(" Note_off_c")) {
                     	noteOnOff = 0;
                     }
-                    else if(data[1] == " Note_on_c") {
+                    else if(data[1].equals(" Note_on_c")) {
                     	noteOnOff = 1;
                     }
                     else {

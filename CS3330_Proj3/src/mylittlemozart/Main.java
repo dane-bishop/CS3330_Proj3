@@ -16,7 +16,6 @@ public class Main {
         List<MidiEventData> midiEvents = parser.parseCsv("CS3330_Proj3\\mystery_song.csv");
         //"C:\Users\Spencer Steinmeyer\git\CS3330_Proj3\CS3330_Proj3\mystery_song.csv"
 
-        // Just for demonstration, print out the parsed objects
         
         for (MidiEventData event : midiEvents) {
             System.out.println("StartEndTick: " + event.getStartEndTick() +
