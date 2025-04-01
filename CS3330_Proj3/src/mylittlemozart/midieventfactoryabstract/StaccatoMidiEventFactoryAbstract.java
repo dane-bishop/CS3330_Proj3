@@ -1,13 +1,13 @@
 package mylittlemozart.midieventfactoryabstract;
 
 import mylittlemozart.midieventfactory.MidiEventFactory;
+import mylittlemozart.midieventfactory.StaccatoMidiEventFactory;
 
-public class StraccatoMidiEventFactoryAbstract implements MidiEventFactoryAbstract{
+public class StaccatoMidiEventFactoryAbstract implements MidiEventFactoryAbstract{
 
 	@Override
 	public MidiEventFactory createFactory() {
-		// TODO Auto-generated method stub
-		return null;
+		return new StaccatoMidiEventFactory();
 	}
 
 }
