@@ -29,15 +29,11 @@ public class CSVParser {
                     int startEndTick = Integer.parseInt(data[0]);
                     int noteOnOff = 0;
                     // if the string is "Note_off_c" sets a 0, if the note is on, sets a 1
-//                    System.out.println("||" + data[1] + "||");
                     if (data[1].equals(" Note_off_c")) {
                     	noteOnOff = 0;
                     }
                     else if(data[1].equals(" Note_on_c")) {
                     	noteOnOff = 1;
-                    }
-                    else {
-                    	noteOnOff = 2;
                     }
                     int channel = Integer.parseInt(data[2]);
                     int note = Integer.parseInt(data[2]);
