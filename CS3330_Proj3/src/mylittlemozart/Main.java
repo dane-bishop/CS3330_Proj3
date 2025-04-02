@@ -8,7 +8,6 @@ import javax.sound.midi.Sequencer;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
 
-
 import mylittlemozart.csvparser.CSVParser;
 import mylittlemozart.instrumentstrategy.ElectricBassGuitarStrategy;
 import mylittlemozart.instrumentstrategy.InstrumentStrategy;
@@ -26,12 +25,6 @@ public class Main {
 
 	
 	public static void main(String[] args) {
-		// this is the main method
-		// spencer
-		
-		
-        
-        //"C:\Users\Spencer Steinmeyer\git\CS3330_Proj3\CS3330_Proj3\mystery_song.csv"
 
         
         try {
@@ -58,7 +51,6 @@ public class Main {
             PitchStrategy pitchStrategy = new HigherPitchStrategy();
 
             for (MidiEventData event : midiEvents) {
-            	
                 int modifiedNote = pitchStrategy.modifyPitch(event.getNote());
                 
                 if (event.getNoteOnOff() == ShortMessage.NOTE_ON) {
